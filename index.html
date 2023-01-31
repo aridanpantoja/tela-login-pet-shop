@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petshop - Logar</title>
+    <!-- Google Fonts Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <main class="card">
+        <div class="card--esquerda">
+            <img src="./assets/images/dog.png" alt="Desenho de um cachorro fofo">
+            <h3>Oferecemos o melhor serviço para o seu pet!</h3>
+        </div>
+        <div class="card--direita">
+            <p>Não tem uma conta? <a href="#" class="link">cadastre-se</a></p>
+            <h1>Login</h1>
+            <form action="/">
+                <div class="campo-input">
+                    <label for="email">Endereço de e-mail</label>
+                    <div class="caixa-input">
+                        <input type="email" name="email" id="email" placeholder="seuemail@dominio.com" autocomplete="off" required>
+                        <i class="fa-solid fa-envelope fa-lg icone" id="email-icon" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <div class="campo-input">
+                    <label for="pass">Senha</label>
+                    <div class="caixa-input">
+                        <input type="password" name="pass" id="pass" autocomplete="off" required>
+                        <i class="fa-solid fa-lock fa-lg icone" aria-hidden="true"></i>
+                        <i class="fa-solid fa-eye-slash fa-eye fa-lg" id="botao-senha" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <div class="politica-privacidade">
+                    <input type="checkbox" id="concordar" value="sim" required>
+                    <label for="concordar">Eu concordo com a <a href="#" class="link">política de privacidade</a></label>
+                </div>
+
+                <button type="submit">LOGAR</button>
+            </form>
+
+            <div class="separador">
+                <div class="linha"></div>
+                <p>ou</p>
+                <div class="linha"></div>
+            </div>
+
+            <div class="login-alternativo">
+                <i class="fa-brands fa-google fa-lg" aria-hidden="true"></i>
+                <p>Continuar com Google</p>
+            </div>
+
+            <div class="login-alternativo">
+                <i class="fa-brands fa-facebook-f  fa-lg" aria-hidden="true"></i>
+                <p>Continuar com Facebook</p>
+            </div>
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/920b610717.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,307 @@
+:root {
+    --branco: #FFFFFF;
+    --amarelo: #F7BF46;
+    --azul: #00354C;
+    --verde: #01D392;
+    --cinza: #D1D1D1;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--amarelo);
+    color: var(--azul);
+}
+
+.link {
+    font-weight: 600;
+    color: var(--verde); 
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 1170px;
+    height: 770px;
+    padding: 0px;
+
+    background: var(--branco);
+    border-radius: 20px;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    margin: 0 auto;
+    width: 4px;
+    height: 770px;
+    background-color: var(--cinza);
+}
+
+.card--esquerda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    height: 100%;
+    padding: 80px;
+}
+
+.card--esquerda > img {
+    width: 100%;
+}
+
+.card--esquerda > h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.card--direita {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+
+    width: 50%;
+    height: 100%;
+    padding: 80px;
+}
+
+.card--direita > p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.card--direita h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;  
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    
+    width: 100%;
+}
+
+.campo-input {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+
+    width: 100%;
+    padding: 0px;
+}
+
+.campo-input label {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.caixa-input {
+    width: 100%;
+    position: relative;
+}
+
+.caixa-input input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    padding: 7px 15px 7px 48px;
+
+    color: var(--azul);
+
+    border: 2px solid var(--cinza);
+    border-radius: 4px;
+    outline: none;
+    transition: 0.16s;
+}
+
+#pass {
+    padding: 7px 48px;
+}
+
+.caixa-input input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.caixa-input input:focus {
+    border: 2px solid var(--verde);
+    box-shadow: 0px 0px 4px var(--verde);
+}
+
+.caixa-input input:focus ~ .icone, .caixa-input input:focus ~ #botao-senha {
+    color: var(--verde);
+}
+
+.icone {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    color: var(--cinza);
+}
+
+#botao-senha {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    color: var(--cinza);
+}
+
+
+.politica-privacidade {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+}
+
+.politica-privacidade input {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    
+    border: 2px solid var(--cinza);
+    border-radius: 4px;
+    
+    cursor: pointer;
+    transition: 0.16s;
+}
+
+.politica-privacidade input:checked {
+    background-color: var(--verde);
+    border: 2px solid var(--verde);
+    box-shadow: 0px 0px 4px var(--verde);
+}
+
+.politica-privacidade label {
+    color: var(--cinza);
+}
+
+button[type="submit"] {
+    width: 100%;
+    height: 56px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.3em;
+    color: var(--branco);
+
+    border: none;
+    border-radius: 10px;
+    background: var(--verde);
+
+    transition: 0.16s;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    transform: scale(1.025);
+}
+
+.separador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+}
+
+.separador p {
+    margin: 0 21px;
+
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--cinza);
+}
+
+.linha {
+    width: 100%;
+    height: 1px;
+    background-color: var(--cinza);
+}
+
+.login-alternativo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    
+    width: 100%;
+    height: 56px;
+    padding: 8px;
+
+    border: 2px solid var(--verde);
+    border-radius: 10px;
+
+    transition: 0.16s;
+    cursor: pointer;
+}
+
+.login-alternativo:hover {
+    transform: scale(1.025);
+}
+
+.login-alternativo p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: var(--verde);
+}
+
+.login-alternativo i {
+    color: var(--verde);
+}
+
+@media screen and (max-width: 1170px) {
+    .card--esquerda, .card::before {
+        display: none;
+    }
+    
+    .card {
+        margin: 16px 24px;
+    }
+
+    .card--direita {
+        width: 100%;
+        padding: 40px 16px;
+    }
+
+    body {
+        min-width: 457px;
+    }
+}
