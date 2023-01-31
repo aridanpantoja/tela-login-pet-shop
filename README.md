@@ -1,7 +1,8 @@
 # Tela de Login Petshop
-> Status do projeto: finalizado
+> Status do projeto: em desenvolvimento
 - Tela de login feita com: HTML, CSS, JavaScript e Figma
 - [Link do projeto no figma](https://www.figma.com/file/TkzRLO1v7I7gzcewh9RtsT/Login-Page?node-id=0%3A1&t=LQNmQja9E6hTF3lm-1)
+- [Deploy na Vercel](https://tela-login-pet-shop.vercel.app)
 ## Estilização
 ### Cores
 Azul: `#00354C`
