@@ -11,6 +11,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     display: flex;
     align-items: center;
@@ -68,8 +72,8 @@ body {
 
 .card--esquerda > h3 {
     font-weight: 500;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
     text-align: center;
 }
 
@@ -87,14 +91,14 @@ body {
 
 .card--direita > p {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
 }
 
 .card--direita h1 {
     font-weight: 700;
-    font-size: 40px;
-    line-height: 60px;  
+    font-size: 4rem;
+    line-height: 6rem;  
 }
 
 form {
@@ -120,8 +124,8 @@ form {
 
 .campo-input label {
     font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
 }
 
 .caixa-input {
@@ -149,8 +153,8 @@ form {
 
 .caixa-input input::placeholder {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
 }
 
 .caixa-input input:focus {
@@ -164,14 +168,14 @@ form {
 
 .icone {
     position: absolute;
-    top: 50%;
+    top: calc(50% - 10.5px);
     left: 15px;
     color: var(--cinza);
 }
 
 #botao-senha {
     position: absolute;
-    top: 50%;
+    top: calc(50% - 10.5px);
     right: 15px;
     color: var(--cinza);
 }
@@ -181,14 +185,17 @@ form {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
     gap: 8px;
+
+    padding: 0px;
 }
 
 .politica-privacidade input {
     -webkit-appearance: none;
     width: 20px;
     height: 20px;
+    min-width: 20px;
+    min-height: 20px;
     margin: 0;
     
     border: 2px solid var(--cinza);
@@ -205,6 +212,7 @@ form {
 }
 
 .politica-privacidade label {
+    font-size: 1.6rem;
     color: var(--cinza);
 }
 
@@ -213,9 +221,9 @@ button[type="submit"] {
     height: 56px;
 
     font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 0.3em;
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: 0.3rem;
     color: var(--branco);
 
     border: none;
@@ -242,8 +250,8 @@ button[type="submit"]:hover {
     margin: 0 21px;
 
     font-weight: 300;
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
     color: var(--cinza);
 }
 
@@ -277,8 +285,8 @@ button[type="submit"]:hover {
 
 .login-alternativo p {
     font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
 
     color: var(--verde);
 }
@@ -294,6 +302,7 @@ button[type="submit"]:hover {
     
     .card {
         margin: 16px 24px;
+        min-width: 308px;
     }
 
     .card--direita {
@@ -301,7 +310,28 @@ button[type="submit"]:hover {
         padding: 40px 16px;
     }
 
-    body {
-        min-width: 457px;
+    .campo-input label {
+        font-size: 1.8rem;
     }
+
+    .politica-privacidade label {
+        font-size: 1.4rem;
+    }
+
+    .caixa-input input {
+        font-size: 1.6rem;
+        height: 56px;
+    }
+
+    .separador p {
+        font-size: 1.6rem;
+    }
+
+    button[type="submit"], .login-alternativo {
+        height: 64px;
+    }
+
+    
+    
+    
 }
