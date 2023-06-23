@@ -1,26 +1,24 @@
-# Tela de Login Petshop
-> Status do projeto: em desenvolvimento
-- Tela de login feita com: HTML, CSS, JavaScript e Figma
-- [Link do projeto no figma](https://www.figma.com/file/TkzRLO1v7I7gzcewh9RtsT/Login-Page?node-id=0%3A1&t=LQNmQja9E6hTF3lm-1)
-- [Deploy na Vercel](https://tela-login-pet-shop.vercel.app)
-## Estilização
-### Cores
-Azul: `#00354C`
+<p align="center">
+  <img src="https://github.com/aridanpantoja/tela-login-pet-shop/blob/main/screenshot.png" alt="Screenshot Tela Login Petshop" width="500">
+</p>
 
-Verde: `#01D392`
+<p align="center">
+  Tela de login de um petshop feita com: HTML, CSS, JavaScript e Figma
+  <br>
+  <br>
+  <a href="https://tela-login-pet-shop.vercel.app"><strong>Ver deploy na Vercel »</strong></a>
+  &nbsp;
+  <a href="https://www.figma.com/file/TkzRLO1v7I7gzcewh9RtsT/Login-Page?node-id=0%3A1&t=LQNmQja9E6hTF3lm-1"><strong>Ver design no Figma »</strong></a>
+  <br>
+  <br>
+</p>
+<div align="center" style="display: inline_block">
+  <img align="center" alt="tech-javascript" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+  &nbsp;
+  <img align="center" alt="tech-html5" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-plain.svg">
+  &nbsp;
+  <img align="center" alt="tech-css3" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain.svg">
+  &nbsp;
+  <img align="center" alt="tech-figma" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg">
+</div>
 
-Amarelo: `#F7BF46`
-
-Cinza: `#D1D1D1`
-
-Branco: `#FFFFFF`
-
-### Fonte
-```html
-Poppins:
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-```
-### Icones / Imagem
-[Font Awesome](https://fontawesome.com) / [Illlustrations](https://illlustrations.co)
